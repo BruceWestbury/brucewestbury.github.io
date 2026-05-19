@@ -4,6 +4,20 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Closed Graph Catalogue</title>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["\\(", "\\)"],
+                        ["$", "$"],
+                    ],
+                },
+            };
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+            async
+        ></script>
 
         <style>
             body {
@@ -189,6 +203,17 @@
                 for (const record of records) {
                     catalogue.appendChild(graphCard(record));
                 }
+
+                if (window.MathJax) {
+                    MathJax.typesetPromise();
+                }
+            }
+
+            function sagePolynomialToLatex(text) {
+                return String(text)
+                    .replaceAll("^", "^")
+                    .replaceAll("*", "\\,")
+                    .replaceAll("n", "n");
             }
 
             function graphCard(record) {
@@ -202,11 +227,14 @@
 
                 const evaluation = document.createElement("div");
                 evaluation.className = "evaluation";
-                evaluation.textContent =
+                if (
                     record.evaluation === null ||
                     record.evaluation === undefined
-                        ? "evaluation: not cached"
-                        : `evaluation: ${record.evaluation}`;
+                ) {
+                    evaluation.textContent = "evaluation: not cached";
+                } else {
+                    evaluation.innerHTML = `\\[${sagePolynomialToLatex(record.evaluation)}\\]`;
+                }
 
                 card.appendChild(drawing);
                 card.appendChild(evaluation);
