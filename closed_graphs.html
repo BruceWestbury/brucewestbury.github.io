@@ -130,6 +130,15 @@
                 font-size: 0.85rem;
                 color: #666;
             }
+
+            .invariants {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 0.25rem 0.75rem;
+                margin-bottom: 0.75rem;
+                font-size: 0.9rem;
+                color: #333;
+            }
         </style>
     </head>
 
@@ -216,6 +225,26 @@
                     .replaceAll("n", "n");
             }
 
+            function invariantHTML(inv) {
+                return `
+                    <div><strong>aut</strong> = ${valueOrDash(inv.automorphism_group_order)}</div>
+                    <div><strong>diam</strong> = ${valueOrDash(inv.diameter)}</div>
+                    <div><strong>χ</strong> = ${valueOrDash(inv.chromatic_number)}</div>
+                    <div><strong>hamiltonian</strong> = ${yesNo(inv.is_hamiltonian)}</div>
+                    <div><strong>spanning trees</strong> = ${valueOrDash(inv.num_spanning_trees)}</div>
+                `;
+            }
+
+            function valueOrDash(x) {
+                return x === null || x === undefined ? "–" : x;
+            }
+
+            function yesNo(x) {
+                if (x === true) return "yes";
+                if (x === false) return "no";
+                return "–";
+            }
+
             function graphCard(record) {
                 const card = document.createElement("article");
                 card.className = "card";
@@ -262,6 +291,17 @@
                     details.appendChild(summary);
                     details.appendChild(pre);
                     card.appendChild(details);
+                }
+
+                if (record.invariants) {
+                    const invariants = document.createElement("div");
+                    invariants.className = "invariants";
+                    for (const invariant of record.invariants) {
+                        const invariantDiv = document.createElement("div");
+                        invariantDiv.textContent = invariant;
+                        invariants.appendChild(invariantDiv);
+                    }
+                    card.appendChild(invariants);
                 }
 
                 return card;
