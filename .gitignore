@@ -54,17 +54,8 @@ Thumbs.db
 # Misc
 # =========================
 *.pdf
-!F4series.pdf
-!finiteseries.pdf
-!families.pdf
 *.txt
 *.bak
 *.tmp
-*.cache
 *.ipynb
-cache/
-notebooks/*
-!notebooks/marimo/
-!notebooks/marimo/*.py
-docs/
-diagnostics/
+
