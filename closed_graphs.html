@@ -219,10 +219,7 @@
             }
 
             function sagePolynomialToLatex(text) {
-                return String(text)
-                    .replaceAll("^", "^")
-                    .replaceAll("*", "\\,")
-                    .replaceAll("n", "n");
+                return String(text).replaceAll("*", "\\,");
             }
 
             function invariantHTML(inv) {
@@ -253,6 +250,13 @@
                 drawing.className = "drawing";
                 drawing.innerHTML =
                     record.svg || "<p class='small'>No SVG available.</p>";
+
+                if (record.invariants) {
+                    const invariants = document.createElement("div");
+                    invariants.className = "invariants";
+                    invariants.innerHTML = invariantHTML(record.invariants);
+                    card.appendChild(invariants);
+                }
 
                 const evaluation = document.createElement("div");
                 evaluation.className = "evaluation";
@@ -291,17 +295,6 @@
                     details.appendChild(summary);
                     details.appendChild(pre);
                     card.appendChild(details);
-                }
-
-                if (record.invariants) {
-                    const invariants = document.createElement("div");
-                    invariants.className = "invariants";
-                    for (const invariant of record.invariants) {
-                        const invariantDiv = document.createElement("div");
-                        invariantDiv.textContent = invariant;
-                        invariants.appendChild(invariantDiv);
-                    }
-                    card.appendChild(invariants);
                 }
 
                 return card;
