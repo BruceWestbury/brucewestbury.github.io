@@ -1,104 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closed Graphs — E₆ Series — Bruce Westbury</title>
-    <link rel="stylesheet" href="../../assets/css/site.css">
-    <script>window.MathJax = { tex: { inlineMath: [["\\(","\\)"],["$","$"]] } };</script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
-</head>
-<body>
-    <header class="topbar">
-        <nav class="topbar-nav">
-            <a href="../../index.html">Home</a>
-            <a href="../../publications.html">Publications</a>
-            <a href="../../about.html">About</a>
-        </nav>
-    </header>
-
-    <div class="page-wrapper">
-        <nav class="sidebar" id="sidebar">
-            <div class="sidebar-heading">Contents</div>
-            <div class="chapter">
-                <a class="chapter-title" href="../f4/index.html">F₄ Series</a>
-                <ul>
-                    <li><a href="../f4/index.html">Introduction</a></li>
-                    <li><a href="../f4/closed-graphs.html">Closed graphs</a></li>
-                    <li><a href="../f4/obstructions.html">Obstructions</a></li>
-                </ul>
-            </div>
-            <div class="chapter">
-                <a class="chapter-title" href="index.html">E₆ Series</a>
-                <ul>
-                    <li><a href="index.html">Introduction</a></li>
-                    <li><a href="closed-graphs.html">Closed graphs</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <main class="main-content">
-            <h1>Closed graphs in the E₆ series</h1>
-
-            <p>
-                Connected simple bipartite cubic graphs of girth \(\geq 6\), for \(t = 16, 18,
-                20, 22\) vertices. Data is loaded from cached JSON. The counts are: \(t = 16\)
-                has 1 graph, \(t = 18\) has 3, \(t = 20\) has 10, and \(t = 22\) has 28.
-                Evaluations are computed using <code>E6_series_quotient</code>.
-            </p>
-
-            <div class="controls">
-                <strong>Vertices:</strong>
-                <button data-t="16">t = 16</button>
-                <button data-t="18">t = 18</button>
-                <button data-t="20">t = 20</button>
-                <button data-t="22">t = 22</button>
-            </div>
-            <p id="status">Choose a value of t.</p>
-            <div id="catalogue" class="catalogue"></div>
-
-            <nav class="page-nav">
-                <a class="prev" href="index.html">Introduction</a>
-                <span class="placeholder"></span>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            Closed Graphs &#8212; E&#8326; Series &#8212; Bruce Westbury
+        </title>
+        <link rel="stylesheet" href="../../assets/css/site.css" />
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["\\(", "\\)"],
+                        ["$", "$"],
+                    ],
+                },
+            };
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+            async
+        ></script>
+    </head>
+    <body>
+        <header class="topbar">
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Toggle menu"
+            >
+                &#9776;
+            </button>
+            <a class="site-title" href="../../index.html">Bruce Westbury</a>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../../publications.html">Publications</a>
+                <a href="../../about.html">About</a>
             </nav>
-        </main>
-    </div>
+        </header>
 
-    <script src="../../assets/js/site.js"></script>
-    <script src="../../assets/js/catalogue.js"></script>
-    <script>
-        const buttons   = document.querySelectorAll("button[data-t]");
-        const status    = document.getElementById("status");
-        const catalogue = document.getElementById("catalogue");
+        <div class="page-wrapper">
+            <nav class="sidebar" id="sidebar">
+                <div class="sidebar-heading">Contents</div>
+                <div class="chapter">
+                    <a class="chapter-title" href="../f4/index.html"
+                        >F&#8324; Series</a
+                    >
+                    <ul>
+                        <li><a href="../f4/index.html">Introduction</a></li>
+                        <li>
+                            <a href="../f4/closed-graphs.html">Closed graphs</a>
+                        </li>
+                        <li>
+                            <a href="../f4/obstructions.html">Obstructions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chapter">
+                    <a class="chapter-title" href="index.html"
+                        >E&#8326; Series</a
+                    >
+                    <ul>
+                        <li><a href="index.html">Introduction</a></li>
+                        <li><a href="closed-graphs.html">Closed graphs</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        for (const btn of buttons) {
-            btn.addEventListener("click", () => {
-                setActive(btn);
-                load(btn.dataset.t);
-            });
-        }
+            <main class="main-content">
+                <div class="content-body">
+                    <h1>Closed graphs in the E&#8326; series</h1>
 
-        function setActive(active) {
-            buttons.forEach(b => b.classList.toggle("active", b === active));
-        }
+                    <p>
+                        Connected simple bipartite cubic graphs of girth &#8805;
+                        6, for \(t = 16, 18, 20, 22\) vertices. Graph counts:
+                        \(t=16\) has 1, \(t=18\) has 3, \(t=20\) has 10,
+                        \(t=22\) has 28. Evaluations are computed using
+                        <code>E6_series_quotient</code>. Data is loaded from
+                        cached JSON.
+                    </p>
 
-        async function load(t) {
-            const url = `${DATA_BASE}/projects/e6/cache/evaluations/closed_t${t}.json`;
-            status.textContent = `Loading t = ${t} …`;
-            catalogue.innerHTML = "";
-            try {
-                const data = await loadJSON(url);
-                const records = data.records || [];
-                status.textContent = `t = ${t}: ${records.length} graph(s)`;
-                for (const r of records) catalogue.appendChild(graphCard(r));
-                retypeset();
-            } catch (e) {
-                status.textContent = `Error: ${e.message}`;
+                    <div class="controls">
+                        <strong>Vertices:</strong>
+                        <button data-t="16">t = 16</button>
+                        <button data-t="18">t = 18</button>
+                        <button data-t="20">t = 20</button>
+                        <button data-t="22">t = 22</button>
+                    </div>
+
+                    <p id="status">Choose a value of t.</p>
+                    <div id="catalogue" class="catalogue"></div>
+
+                    <nav class="page-nav">
+                        <a class="prev" href="index.html">Introduction</a>
+                        <span class="placeholder"></span>
+                    </nav>
+                </div>
+            </main>
+        </div>
+
+        <script src="../../assets/js/site.js"></script>
+        <script src="../../assets/js/catalogue.js"></script>
+        <script>
+            const buttons = document.querySelectorAll("button[data-t]");
+            const status = document.getElementById("status");
+            const catalogue = document.getElementById("catalogue");
+
+            for (const btn of buttons) {
+                btn.addEventListener("click", () => {
+                    setActive(btn);
+                    load(btn.dataset.t);
+                });
             }
-        }
 
-        load(16);
-        setActive(document.querySelector('button[data-t="16"]'));
-    </script>
-</body>
+            function setActive(active) {
+                buttons.forEach((b) =>
+                    b.classList.toggle("active", b === active),
+                );
+            }
+
+            async function load(t) {
+                const url = `${DATA_BASE}/projects/e6/cache/evaluations/closed_t${t}.json`;
+                status.textContent = `Loading t = ${t} \u2026`;
+                catalogue.innerHTML = "";
+                try {
+                    const data = await loadJSON(url);
+                    const records = data.records || [];
+                    status.textContent = `t = ${t}: ${records.length} graph(s)`;
+                    for (const r of records)
+                        catalogue.appendChild(graphCard(r));
+                    retypeset();
+                } catch (e) {
+                    status.textContent = `Error: ${e.message}`;
+                }
+            }
+
+            load(16);
+            setActive(document.querySelector('button[data-t="16"]'));
+        </script>
+    </body>
 </html>

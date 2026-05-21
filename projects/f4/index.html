@@ -1,75 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F₄ Series — Bruce Westbury</title>
-    <link rel="stylesheet" href="../../assets/css/site.css">
-    <script>window.MathJax = { tex: { inlineMath: [["\\(","\\)"],["$","$"]] } };</script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
-</head>
-<body>
-    <header class="topbar">
-        <nav class="topbar-nav">
-            <a href="../../index.html">Home</a>
-            <a href="../../publications.html">Publications</a>
-            <a href="../../about.html">About</a>
-        </nav>
-    </header>
-
-    <div class="layout">
-        <nav class="sidebar" id="sidebar">
-            <div class="sidebar-heading">Contents</div>
-            <div class="chapter">
-                <a class="chapter-title" href="index.html">F₄ Series</a>
-                <ul>
-                    <li><a href="index.html">Introduction</a></li>
-                    <li><a href="closed-graphs.html">Closed graphs</a></li>
-                    <li><a href="obstructions.html">Obstructions</a></li>
-                </ul>
-            </div>
-            <div class="chapter">
-                <a class="chapter-title" href="../e6/index.html">E₆ Series</a>
-                <ul>
-                    <li><a href="../e6/index.html">Introduction</a></li>
-                    <li><a href="../e6/closed-graphs.html">Closed graphs</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <main class="content">
-            <h1>The F₄ series</h1>
-
-            <p>
-                The F₄ series is a one-parameter family of diagrammatic categories associated to the
-                sub-exceptional series of Lie algebras ending in F₄. The parameter is a dimension \(n\)
-                of a representation with an invariant symmetric cubic tensor.
-            </p>
-
-            <p>
-                The fundamental relation is the six-term relation among four-boundary trivalent graphs.
-                Together with reduction rules for bigons, triangles, and squares, this presentation
-                allows evaluation of any closed trivalent graph of girth at least 5.
-            </p>
-
-            <p>
-                By computer search, every closed cubic graph of girth ≥ 5 up to 16 vertices can be
-                evaluated using this relation. However, consistency requires the polynomial
-                \((n-26)(n-14)(n-8)(n-5)(n-2)^2 n(n+1)(n+2)=0\).
-            </p>
-
-            <p>
-                This is Thurston's result (2004). The roots correspond to known Lie algebra
-                representations in the F₄ row of Freudenthal's magic square.
-            </p>
-
-            <nav class="page-nav">
-                <span class="placeholder"></span>
-                <a class="next" href="closed-graphs.html">Closed graphs</a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>F&#8324; Series &#8212; Bruce Westbury</title>
+        <link rel="stylesheet" href="../../assets/css/site.css" />
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["\\(", "\\)"],
+                        ["$", "$"],
+                    ],
+                },
+            };
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+            async
+        ></script>
+    </head>
+    <body>
+        <header class="topbar">
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Toggle menu"
+            >
+                &#9776;
+            </button>
+            <a class="site-title" href="../../index.html">Bruce Westbury</a>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../../publications.html">Publications</a>
+                <a href="../../about.html">About</a>
             </nav>
-        </main>
-    </div>
+        </header>
 
-    <script src="../../assets/js/site.js"></script>
-</body>
+        <div class="page-wrapper">
+            <nav class="sidebar" id="sidebar">
+                <div class="sidebar-heading">Contents</div>
+                <div class="chapter">
+                    <a class="chapter-title" href="index.html"
+                        >F&#8324; Series</a
+                    >
+                    <ul>
+                        <li><a href="index.html">Introduction</a></li>
+                        <li><a href="closed-graphs.html">Closed graphs</a></li>
+                        <li><a href="obstructions.html">Obstructions</a></li>
+                    </ul>
+                </div>
+                <div class="chapter">
+                    <a class="chapter-title" href="../e6/index.html"
+                        >E&#8326; Series</a
+                    >
+                    <ul>
+                        <li><a href="../e6/index.html">Introduction</a></li>
+                        <li>
+                            <a href="../e6/closed-graphs.html">Closed graphs</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="main-content">
+                <div class="content-body">
+                    <h1>The F&#8324; series</h1>
+
+                    <p>
+                        The F&#8324; series is a one-parameter family of
+                        diagrammatic categories associated to the
+                        sub-exceptional series of Lie algebras ending in
+                        F&#8324;. The parameter \(n\) is the dimension of a
+                        representation carrying an invariant symmetric cubic
+                        tensor.
+                    </p>
+
+                    <p>
+                        The fundamental relation is the six-term relation among
+                        four-boundary trivalent graphs. Together with reduction
+                        rules for bigons, triangles, and squares, this
+                        presentation allows evaluation of any closed trivalent
+                        graph of girth at least 5.
+                    </p>
+
+                    <p>
+                        By computer search, every closed cubic graph of girth
+                        &#8805; 5 up to 16 vertices can be evaluated using this
+                        relation. However, consistency of the evaluations
+                        requires the polynomial \[
+                        (n-26)(n-14)(n-8)(n-5)(n-2)^2\, n\,(n+1)(n+2) = 0. \]
+                    </p>
+
+                    <p>
+                        This is Thurston&#8217;s result (2004). The nine roots
+                        correspond to known Lie algebra representations in the
+                        F&#8324; row of Freudenthal&#8217;s magic square.
+                    </p>
+
+                    <nav class="page-nav">
+                        <span class="placeholder"></span>
+                        <a class="next" href="closed-graphs.html"
+                            >Closed graphs</a
+                        >
+                    </nav>
+                </div>
+            </main>
+        </div>
+
+        <script src="../../assets/js/site.js"></script>
+    </body>
 </html>
