@@ -1,0 +1,113 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.5",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "e9066029e6fe81525a792d008097435a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "f9e73b65ae8e8ad5a68b8d9c9bfeb668",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "5c0f70c3220a119c31a1ed3d6dc91e9f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"rectification-of-a-skew-semistandard-tableau-callback-fix-version\">Rectification of a skew semistandard tableau \u2014 CALLBACK FIX VERSION</h1>\n<span class=\"paragraph\">English notation is used: rows increase downward and columns increase to\nthe right. Ordinary Young diagrams are top-left justified.</span>\n<span class=\"paragraph\">Choose a blue starting hole. During a slide there is no further choice:\npress <strong>next</strong> until the slide stops. Then the next set of possible\nstarting holes is recomputed from the new tableau.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "c9954b1b6740dc73860022e3750fe442",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='bkHC-0' random-id='4205a9af-c8fe-c190-addb-c45e834afa1d'><marimo-number data-initial-value='6' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;word length n&lt;/span&gt;&lt;/span&gt;&quot;' data-start='2' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-1' random-id='170654b7-38af-36e4-4d73-3ba8a7df8479'><marimo-number data-initial-value='5' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;alphabet size a&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-2' random-id='b1879902-4081-45aa-0767-e32a701bb9b5'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;random seed&lt;/span&gt;&lt;/span&gt;&quot;' data-start='0' data-stop='10000' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-3' random-id='e9c31d72-7b82-d149-2bf3-ffe8f91669a1'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;new diagonal word&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "36a6f867bfb8544675d24a52ddcdd8c9",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "514b37ac14d7b41d0ad60117ba17e62f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'>\n    <style>\n      .jt-grid {\n        display: inline-grid;\n        grid-template-columns: repeat(6, 3rem);\n        grid-auto-rows: 3rem;\n        gap: 0;\n        line-height: 1;\n      }\n      .jt-cell {\n        width: 3rem;\n        height: 3rem;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        box-sizing: border-box;\n        font-size: 1.2rem;\n        margin: 0;\n        padding: 0;\n      }\n      .jt-cell.entry { border: 1px solid #333; background: white; }\n      .jt-cell.active-hole { border: 2px dashed #333; background: #fff4bf; }\n      .jt-cell.possible-hole { border: 1px solid #777; background: #e8eefc; }\n      .jt-cell.blank { border: 1px solid transparent; background: transparent; }\n    </style>\n    <div class=\"jt-grid\"><div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell active-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">4</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">3</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">5</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">2</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div></div>\n    <div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"controls-callback-fix-version\">Controls \u2014 callback fix version</h3></span><marimo-ui-element object-id='PKri-0' random-id='0d555504-6a82-ab62-a831-531f8d1e9e7b'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;NEXT \u2014 advance active slide&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">No possible starting holes.</span></span></div></div><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Skew shape including active hole: <strong>True</strong><br />\nFilled boxes semistandard: <strong>True</strong><br />\nPossible starting holes: <strong>0</strong><br />\nNEXT button visible: <strong>yes</strong></span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "8b6000e68c29e3713109c043642e78a6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"recent-moves\">Recent moves</h3>\n<ul>\n<li>Initial SW--NE diagonal skew tableau.</li>\n<li>Started a jeu de taquin slide at (0, 4).</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

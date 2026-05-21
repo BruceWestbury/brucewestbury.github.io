@@ -1,0 +1,119 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.5",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "89321978e49d5b054cced8c5fa6d5a0a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "97c85cdffbe43dfdeb7ddbb8cb3dbe58",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"set-valued-tableaux-playground\">Set-valued tableaux playground</h1>\n<span class=\"paragraph\">This is a marimo rewrite of the small HTML prototype. The important change is\nthat the tableau is now explicit Python state, rather than an array hidden in\nJavaScript.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "9e4f77ac15dc9a6c1ddc8144adbd2bdd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "0eccd857ea848eb4d338c04e894f89b3",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "e58d55105f74fd194b4c42d81673e73a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"controls\">Controls</h2></span><div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='lEQa-0' random-id='36264541-ff6f-60fb-90f3-5981005b679a'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;rows&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='12' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='lEQa-1' random-id='b04f276e-2b3a-e9b7-c49b-f3d0bd0c7b52'><marimo-number data-initial-value='4' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;columns&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='12' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='lEQa-5' random-id='d03f6500-94ee-78b4-ce79-aa6951ffd00c'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;resize tableau&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div><div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='lEQa-2' random-id='57bbd447-acd2-fbc2-d26b-6fceb82c0fc6'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;row&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='12' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='lEQa-3' random-id='c0fff169-7a57-8e6a-b7ab-48c4e4f9c2ba'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;column&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='12' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='lEQa-4' random-id='f338475e-643b-c2d3-e344-f2ea3e790929'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;entry&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='200' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='lEQa-6' random-id='5b08c293-5693-d990-adae-a78c5c3a0c28'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;add entry&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;success&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element><marimo-ui-element object-id='lEQa-7' random-id='7ef92e3f-7777-dbe4-687b-ea51da4e38aa'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;clear cell&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;warn&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "99304aff8ae2f248294075a2c8ceebed",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"tableau\">Tableau</h2></span>\n<style>\n  table.setvalued { border-collapse: collapse; margin-top: 0.5rem; }\n  table.setvalued td {\n    min-width: 4.5rem;\n    height: 3.25rem;\n    border: 1px solid black;\n    text-align: center;\n    vertical-align: middle;\n    padding: 0.4rem;\n    font-size: 1.05rem;\n  }\n</style>\n<table class=\"setvalued\"><tr><td>1</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td></tr></table><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Status:</strong> Semistandard conditions pass.</span></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\"><strong>Message:</strong> Added 3 to cell (1, 2).</span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "8d3fd2273a5aaa65d11eccf1e3bb6ee6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "application/json": "[[\"text/plain+frozenset:[1]\", \"text/plain+frozenset:[3]\", \"text/plain+frozenset:[]\", \"text/plain+frozenset:[]\"]]"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vaMo",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "gEyG",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E₆ Series — Bruce Westbury</title>
+    <link rel="stylesheet" href="../../assets/css/site.css">
+    <script>window.MathJax = { tex: { inlineMath: [["\\(","\\)"],["$","$"]] } };</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+    <header class="topbar">
+        <nav class="topbar-nav">
+            <a href="../../index.html">Home</a>
+            <a href="../../publications.html">Publications</a>
+            <a href="../../about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-heading">Contents</div>
+            <div class="chapter">
+                <a class="chapter-title" href="../f4/index.html">F₄ Series</a>
+                <ul>
+                    <li><a href="../f4/index.html">Introduction</a></li>
+                    <li><a href="../f4/closed-graphs.html">Closed graphs</a></li>
+                    <li><a href="../f4/obstructions.html">Obstructions</a></li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <a class="chapter-title" href="index.html">E₆ Series</a>
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="closed-graphs.html">Closed graphs</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <h1>The E₆ series</h1>
+
+            <p>
+                The E₆ series is a one-parameter family associated to the sub-exceptional series
+                ending in E₆. The graphs involved are closed bipartite cubic graphs. The parameter
+                \(n\) is the dimension of a representation with an invariant element of the third
+                symmetric power.
+            </p>
+
+            <p>
+                The fundamental relation is the seven-term relation among five-boundary bipartite
+                trivalent graphs. Together with reduction rules for bigons and squares, this allows
+                evaluation of any closed bipartite cubic graph of girth at least 6.
+            </p>
+
+            <p>
+                Every closed bipartite cubic graph of girth \(\geq 6\) up to 22 vertices can be
+                evaluated. Consistency requires the degree-12 polynomial
+                \[
+                    (n-27)(n-15)(n-9)(n-6)(n-3)^2(n-1)n^2(n+1)(n+3)^2 = 0
+                \]
+                (Thurston 2004). The roots correspond to Lie algebras in the E₆ row of
+                Freudenthal's magic square.
+            </p>
+
+            <p>
+                The computation at \(t = 22\) is larger than the F₄ computation: there are 406
+                source graphs yielding 406 relations.
+            </p>
+
+            <nav class="page-nav">
+                <span class="placeholder"></span>
+                <a class="next" href="closed-graphs.html">Closed graphs</a>
+            </nav>
+        </main>
+    </div>
+
+    <script src="../../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.5",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "e9066029e6fe81525a792d008097435a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "df725279c52d70d2d7519d6608691893",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "55806742c77e6cf91deac02598bd3a85",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"rectification-buttons-v4\">RECTIFICATION BUTTONS V4</h1>\n<span class=\"paragraph\">This file deliberately shows a <strong>Button panel</strong> immediately under the tableau. Starting holes are restricted to the original bounding rectangle.\nIf no slide is active it shows <strong>Start (r, c)</strong> buttons. During a slide it\nshows <strong>NEXT</strong>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "c9954b1b6740dc73860022e3750fe442",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='bkHC-0' random-id='1a890351-2153-869b-7aa7-d0ba385a1d99'><marimo-number data-initial-value='6' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;word length n&lt;/span&gt;&lt;/span&gt;&quot;' data-start='2' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-1' random-id='45a6cce5-17ed-e425-32d1-30e180a16dfc'><marimo-number data-initial-value='5' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;alphabet size a&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-2' random-id='c4a62cb1-d403-60be-c638-c2beaec4945e'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;random seed&lt;/span&gt;&lt;/span&gt;&quot;' data-start='0' data-stop='10000' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-3' random-id='7721860f-8851-1467-4bb8-c07940f6dfd7'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;new diagonal word&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "2c39fe8b721823006ea00ffbde7b07d2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "a31b95a3bf18c8b73e020d3d31391091",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0rem'>\n            <style>\n              .jt-grid {\n                display: inline-grid;\n                grid-template-columns: repeat(6, 3rem);\n                grid-auto-rows: 3rem;\n                gap: 0px;\n                line-height: 1;\n              }\n              .jt-cell {\n                width: 3rem; height: 3rem;\n                display: flex; align-items: center; justify-content: center;\n                box-sizing: border-box; font-size: 1.2rem;\n                margin: 0; padding: 0;\n              }\n              .jt-cell.entry { border: 1px solid #333; background: white; }\n              .jt-cell.active-hole { border: 2px dashed #333; background: #fff4bf; }\n              .jt-cell.possible-hole { border: 1px solid #777; background: #e8eefc; }\n              .jt-cell.blank { border: 1px solid transparent; background: transparent; }\n            </style>\n            <div class=\"jt-grid\"><div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell entry\">4</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">2</div>\n<div class=\"jt-cell entry\">3</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">5</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div></div>\n            <span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Skew shape including active hole: <strong>True</strong><br />\nFilled boxes semistandard: <strong>True</strong><br />\nActive hole: <strong>None</strong><br />\nPossible starting holes: <strong>()</strong></span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "f8273f2834157a158b3c04c3324d6c82",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"button-panel-v4\">BUTTON PANEL V4</h2></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">No possible starting holes.</span></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Active hole: <code>None</code></span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "f340ef751438874959fd554573c02103",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"recent-moves\">Recent moves</h3>\n<ul>\n<li>Moved 1 from (0, 2) into (0, 1).</li>\n<li>Moved 1 from (0, 3) into (0, 2).</li>\n<li>Moved 4 from (0, 4) into (0, 3); the slide stops.</li>\n<li>Started a jeu de taquin slide at (1, 0).</li>\n<li>Moved 2 from (2, 0) into (1, 0).</li>\n<li>Moved 5 from (2, 1) into (2, 0); the slide stops.</li>\n<li>Started a jeu de taquin slide at (0, 0).</li>\n<li>Moved 1 from (0, 1) into (0, 0).</li>\n<li>Moved 1 from (0, 2) into (0, 1).</li>\n<li>Moved 4 from (0, 3) into (0, 2); the slide stops.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "hgxB",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

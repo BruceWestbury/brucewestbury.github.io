@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obstructions — F₄ Series — Bruce Westbury</title>
+    <link rel="stylesheet" href="../../assets/css/site.css">
+    <script>window.MathJax = { tex: { inlineMath: [["\\(","\\)"],["$","$"]] } };</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+    <header class="topbar">
+        <nav class="topbar-nav">
+            <a href="../../index.html">Home</a>
+            <a href="../../publications.html">Publications</a>
+            <a href="../../about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-heading">Contents</div>
+            <div class="chapter">
+                <a class="chapter-title" href="index.html">F₄ Series</a>
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="closed-graphs.html">Closed graphs</a></li>
+                    <li><a href="obstructions.html">Obstructions</a></li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <a class="chapter-title" href="../e6/index.html">E₆ Series</a>
+                <ul>
+                    <li><a href="../e6/index.html">Introduction</a></li>
+                    <li><a href="../e6/closed-graphs.html">Closed graphs</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content">
+            <h1>F₄ obstruction witnesses</h1>
+
+            <p>
+                At \(t = 16\), 38 of the 335 source relations yield a nonzero scalar after
+                substituting all known graph evaluations. Each scalar is a rational multiple of
+                the obstruction polynomial
+                \((n-26)(n-14)(n-8)(n-5)(n-2)^2 n(n+1)(n+2)\).
+                These 38 witnesses are listed below.
+            </p>
+
+            <p id="status">Loading …</p>
+            <div id="catalogue" class="catalogue"></div>
+
+            <nav class="page-nav">
+                <a class="prev" href="closed-graphs.html">Closed graphs</a>
+                <span class="placeholder"></span>
+            </nav>
+        </main>
+    </div>
+
+    <script src="../../assets/js/site.js"></script>
+    <script src="../../assets/js/catalogue.js"></script>
+    <script>
+        const status   = document.getElementById("status");
+        const catalogue = document.getElementById("catalogue");
+
+        async function load() {
+            const url = `${DATA_BASE}/projects/f4/cache/closed/obstructions_t16.json`;
+            status.textContent = "Loading …";
+            try {
+                const data = await loadJSON(url);
+                const records = data.records || [];
+                status.textContent = `${records.length} witness(es) at t = ${data.t ?? 16}`;
+                for (const r of records) catalogue.appendChild(obstructionCard(r));
+                retypeset();
+            } catch (e) {
+                status.textContent = `Error: ${e.message}`;
+            }
+        }
+        load();
+    </script>
+</body>
+</html>

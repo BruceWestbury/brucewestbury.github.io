@@ -1,0 +1,132 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.5",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "e9066029e6fe81525a792d008097435a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "85b647fb96651885dadef8deed27b56d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "05ff4ac0ae39180dd2103f58179022cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"rectification-of-a-skew-semistandard-tableau-diagnostic-fixed-version\">Rectification of a skew semistandard tableau \u2014 DIAGNOSTIC FIXED VERSION</h1>\n<span class=\"paragraph\">This version displays the computed possible holes explicitly below the\ntableau. Use the dropdown plus <strong>Start selected hole</strong> to start a slide,\nthen press <strong>NEXT</strong> until the slide stops.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "c9954b1b6740dc73860022e3750fe442",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='bkHC-0' random-id='ebb1ca73-df15-505c-064b-f47790a44fb5'><marimo-number data-initial-value='6' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;word length n&lt;/span&gt;&lt;/span&gt;&quot;' data-start='2' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-1' random-id='5092d6d3-3fd7-9ba1-5da4-883b3ecd6b49'><marimo-number data-initial-value='5' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;alphabet size a&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-2' random-id='be8c8f49-a2bf-d640-1475-3f694d6a9864'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;random seed&lt;/span&gt;&lt;/span&gt;&quot;' data-start='0' data-stop='10000' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-3' random-id='533259b2-41f9-65ee-7b56-a3065b9b8e91'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;new diagonal word&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "2c39fe8b721823006ea00ffbde7b07d2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "97fc0cce756aff1293f5ad5f59e5a522",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0rem'>\n    <style>\n      .jt-grid {\n        display: inline-grid;\n        grid-template-columns: repeat(7, 3rem);\n        grid-auto-rows: 3rem;\n        gap: 0px;\n        line-height: 1;\n      }\n      .jt-cell {\n        width: 3rem; height: 3rem;\n        display: flex; align-items: center; justify-content: center;\n        box-sizing: border-box; font-size: 1.2rem;\n        margin: 0; padding: 0;\n      }\n      .jt-cell.entry { border: 1px solid #333; background: white; }\n      .jt-cell.active-hole { border: 2px dashed #333; background: #fff4bf; }\n      .jt-cell.possible-hole { border: 1px solid #777; background: #e8eefc; }\n      .jt-cell.blank { border: 1px solid transparent; background: transparent; }\n    </style>\n    <div class=\"jt-grid\"><div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">4</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">3</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">5</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">2</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div></div>\n    <span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Skew shape including active hole: <strong>True</strong><br />\nFilled boxes semistandard: <strong>True</strong><br />\nActive hole: <strong>None</strong><br />\nPossible starting holes: <strong>((-1, 5), (0, 4), (1, 3), (2, 2), (3, 1), (4, 0), (5, -1))</strong></span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "95234f022550c936fc1ba6bcf7ceea4d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='Xref-0' random-id='50715315-f3ec-278f-18c1-98b18d78f5d0'><marimo-dropdown data-initial-value='[]' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Choose starting hole&lt;/span&gt;&lt;/span&gt;&quot;' data-options='[&quot;(-1, 5)&quot;,&quot;(0, 4)&quot;,&quot;(1, 3)&quot;,&quot;(2, 2)&quot;,&quot;(3, 1)&quot;,&quot;(4, 0)&quot;,&quot;(5, -1)&quot;]' data-allow-select-none='true' data-searchable='false' data-full-width='false'></marimo-dropdown></marimo-ui-element><marimo-ui-element object-id='Xref-1' random-id='16c776a5-90f9-d214-b32b-8f3aba1a4e6e'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Start selected hole&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "78d7e465da3c3b31345149579555b46a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "BYtC",
+      "code_hash": "f340ef751438874959fd554573c02103",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h3 id=\"recent-moves\">Recent moves</h3>\n<ul>\n<li>Initial SW--NE diagonal skew tableau.</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "RGSE",
+      "code_hash": null,
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

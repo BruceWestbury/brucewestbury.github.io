@@ -1,0 +1,106 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.5",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "e9066029e6fe81525a792d008097435a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "e6ed9aa37d3a8982e125b0a0de94da31",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "64b41466f89ccdfa4eb05a2465ca06d6",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"rectification-buttons-v3\">RECTIFICATION BUTTONS V3</h1>\n<span class=\"paragraph\">This file deliberately shows a <strong>Button panel</strong> immediately under the tableau.\nIf no slide is active it shows <strong>Start (r, c)</strong> buttons. During a slide it\nshows <strong>NEXT</strong>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "c9954b1b6740dc73860022e3750fe442",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-ui-element object-id='bkHC-0' random-id='4e273526-8993-4a93-f002-0cbaf7dbb3aa'><marimo-number data-initial-value='6' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;word length n&lt;/span&gt;&lt;/span&gt;&quot;' data-start='2' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-1' random-id='b2b96aff-4a8f-83b0-3798-ad4c54343866'><marimo-number data-initial-value='5' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;alphabet size a&lt;/span&gt;&lt;/span&gt;&quot;' data-start='1' data-stop='20' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-2' random-id='95341138-f429-a315-3d2f-0563cb5eab09'><marimo-number data-initial-value='1' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;random seed&lt;/span&gt;&lt;/span&gt;&quot;' data-start='0' data-stop='10000' data-step='1' data-debounce='false' data-full-width='false' data-disabled='false'></marimo-number></marimo-ui-element><marimo-ui-element object-id='bkHC-3' random-id='49a0190b-27da-2cff-106a-da8a947e0754'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;new diagonal word&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "2c39fe8b721823006ea00ffbde7b07d2",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "f1140064b3f61735118effa293d62393",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0rem'>\n            <style>\n              .jt-grid {\n                display: inline-grid;\n                grid-template-columns: repeat(7, 3rem);\n                grid-auto-rows: 3rem;\n                gap: 0px;\n                line-height: 1;\n              }\n              .jt-cell {\n                width: 3rem; height: 3rem;\n                display: flex; align-items: center; justify-content: center;\n                box-sizing: border-box; font-size: 1.2rem;\n                margin: 0; padding: 0;\n              }\n              .jt-cell.entry { border: 1px solid #333; background: white; }\n              .jt-cell.active-hole { border: 2px dashed #333; background: #fff4bf; }\n              .jt-cell.possible-hole { border: 1px solid #777; background: #e8eefc; }\n              .jt-cell.blank { border: 1px solid transparent; background: transparent; }\n            </style>\n            <div class=\"jt-grid\"><div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">4</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">3</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell entry\">1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">5</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell possible-hole\">\u25a1</div>\n<div class=\"jt-cell entry\">2</div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div>\n<div class=\"jt-cell blank\"></div></div>\n            <span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Skew shape including active hole: <strong>False</strong><br />\nFilled boxes semistandard: <strong>True</strong><br />\nActive hole: <strong>None</strong><br />\nPossible starting holes: <strong>((-2, 5), (-1, 4), (1, 2), (3, 1), (4, 0), (5, -1))</strong></span></span></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "a74d69bd92f295f4cd0b972b1a5dea8d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"button-panel-v3\">BUTTON PANEL V3</h2></span><span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Possible holes: <code>((-2, 5), (-1, 4), (1, 2), (3, 1), (4, 0), (5, -1))</code></span></span><div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 1rem'><marimo-ui-element object-id='Xref-0' random-id='14666709-599a-b93b-eb8a-28715c247d98'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Start (-2, 5)&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element><marimo-ui-element object-id='Xref-1' random-id='b41b5ff6-5e2b-f92d-1d2e-a6a373767169'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Start (-1, 4)&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element><marimo-ui-element object-id='Xref-2' random-id='6138c9c1-f65a-3a76-e9fb-605e3244cbbb'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Start (1, 2)&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element><marimo-ui-element object-id='Xref-3' random-id='db29c0d7-4ada-6090-662e-7dd47a11233b'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Start (3, 1)&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element><marimo-ui-element object-id='Xref-4' random-id='fad21db0-242d-d62e-a6dd-6f3169bc1cda'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Start (4, 0)&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element><marimo-ui-element object-id='Xref-5' random-id='505994cf-4090-b2b9-06f9-5cb66f7adaf4'><marimo-button data-initial-value='0' data-label='&quot;&lt;span class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&gt;&lt;span class=&#92;&quot;paragraph&#92;&quot;&gt;Start (5, -1)&lt;/span&gt;&lt;/span&gt;&quot;' data-kind='&quot;neutral&quot;' data-disabled='false' data-full-width='false'></marimo-button></marimo-ui-element></div></div>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "f340ef751438874959fd554573c02103",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}
