@@ -3,7 +3,7 @@
    ============================================================ */
 
 :root {
-    --topbar-height: 48px;
+    --topbar-height: 64px;
     --sidebar-width: 220px;
     --content-max: 740px;
     --gap: 1.5rem;
@@ -84,7 +84,7 @@ a:hover {
 }
 
 .topbar .logo {
-    height: 34px;
+    height: 48px;
     width: auto;
     flex-shrink: 0;
     display: block;
