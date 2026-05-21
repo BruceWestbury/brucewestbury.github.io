@@ -24,6 +24,12 @@
     </head>
     <body>
         <header class="topbar">
+            <img
+                src="../../assets/images/magic_square_logo.svg"
+                class="logo"
+                alt="Magic square"
+            />
+            <a class="site-title" href="../../index.html">Bruce Westbury</a>
             <button
                 class="menu-toggle"
                 id="menu-toggle"
@@ -31,12 +37,6 @@
             >
                 &#9776;
             </button>
-            <a class="site-title" href="../../index.html">Bruce Westbury</a>
-            <nav>
-                <a href="../../index.html">Home</a>
-                <a href="../../publications.html">Publications</a>
-                <a href="../../about.html">About</a>
-            </nav>
         </header>
 
         <div class="page-wrapper">
@@ -98,7 +98,7 @@
             const catalogue = document.getElementById("catalogue");
 
             async function load() {
-                const url = `${DATA_BASE}/projects/f4/cache/closed/obstructions_t16.json`;
+                const url = `${DATA_BASE}/projects/f4/cache/obstructions_t16.json`;
                 status.textContent = "Loading \u2026";
                 try {
                     const data = await loadJSON(url);
