@@ -76,7 +76,7 @@
 
                     <p>
                         Connected simple bipartite cubic graphs of girth &#8805;
-                        6, for \(t = 16, 18, 20, 22\) vertices. Graph counts:
+                        6, for \(t = 14,16, 18, 20, 22\) vertices. Graph counts:
                         \(t=16\) has 1, \(t=18\) has 3, \(t=20\) has 10,
                         \(t=22\) has 28. Evaluations are computed using
                         <code>E6_series_quotient</code>. Data is loaded from
@@ -85,6 +85,7 @@
 
                     <div class="controls">
                         <strong>Vertices:</strong>
+                        <button data-t="14">t = 14</button>
                         <button data-t="16">t = 16</button>
                         <button data-t="18">t = 18</button>
                         <button data-t="20">t = 20</button>
@@ -139,7 +140,7 @@
             }
 
             load(16);
-            setActive(document.querySelector('button[data-t="16"]'));
+            setActive(document.querySelector('button[data-t="14"]'));
         </script>
     </body>
 </html>
