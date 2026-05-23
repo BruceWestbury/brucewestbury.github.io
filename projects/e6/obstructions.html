@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Obstructions &#8212; E&#8326; Series &#8212; Bruce Westbury</title>
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+    <script>window.MathJax = { tex: { inlineMath: [["\\(","\\)"],["$","$"]] } };</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+    <header class="topbar">
+        <img src="../../assets/images/magic_square_logo.svg" class="logo" alt="Magic square" />
+        <a class="site-title" href="../../index.html">Bruce Westbury</a>
+        <nav><a href="../../index.html">Home</a></nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </header>
+
+    <div class="page-wrapper">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-heading">Contents</div>
+            <div class="chapter">
+                <a class="chapter-title" href="../f4/index.html">F&#8324; Series</a>
+                <ul>
+                    <li><a href="../f4/index.html">Introduction</a></li>
+                    <li><a href="../f4/closed-graphs.html">Closed graphs</a></li>
+                    <li><a href="../f4/obstructions.html">Obstructions</a></li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <a class="chapter-title" href="index.html">E&#8326; Series</a>
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="closed-graphs.html">Closed graphs</a></li>
+                    <li><a href="obstructions.html">Obstructions</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="content-body">
+                <h1>E&#8326; obstruction witnesses</h1>
+
+                <p>
+                    At \(t = 22\), the 406 source relations are fully evaluated
+                    using the known closed-graph values at \(t = 16, 18, 20, 22\).
+                    Each relation that yields a nonzero scalar is an obstruction
+                    witness. Every such scalar is a rational multiple of the
+                    degree-12 obstruction polynomial
+                    \[
+                        (n-27)(n-15)(n-9)(n-6)(n-3)^2(n-1)\,n^2(n+1)(n+3)^2.
+                    \]
+                    The witnesses are listed below.
+                </p>
+
+                <p id="status">Loading &#8230;</p>
+                <div id="catalogue" class="catalogue"></div>
+
+                <nav class="page-nav">
+                    <a class="prev" href="closed-graphs.html">Closed graphs</a>
+                    <span class="placeholder"></span>
+                </nav>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/js/site.js"></script>
+    <script src="../../assets/js/catalogue.js"></script>
+    <script>
+        const status    = document.getElementById("status");
+        const catalogue = document.getElementById("catalogue");
+
+        async function load() {
+            const url = `${DATA_BASE}/projects/e6/cache/closed/obstructions_t22.json`;
+            status.textContent = "Loading \u2026";
+            try {
+                const data    = await loadJSON(url);
+                const records = data.records || [];
+                status.textContent = `${records.length} witness(es) at t = ${data.t ?? 22}`;
+                for (const r of records) catalogue.appendChild(obstructionCard(r));
+                retypeset();
+            } catch (e) {
+                status.textContent = `Error: ${e.message}`;
+            }
+        }
+
+        load();
+    </script>
+</body>
+</html>
