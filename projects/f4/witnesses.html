@@ -3,9 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>
-            Obstructions &#8212; F&#8324; Series &#8212; Bruce Westbury
-        </title>
+        <title>Witnesses &#8212; F&#8324; Series &#8212; Bruce Westbury</title>
         <link rel="stylesheet" href="../../assets/css/site.css" />
         <script>
             window.MathJax = {
@@ -52,7 +50,7 @@
                     <ul>
                         <li><a href="index.html">Introduction</a></li>
                         <li><a href="closed-graphs.html">Closed graphs</a></li>
-                        <li><a href="obstructions.html">Obstructions</a></li>
+                        <li><a href="witnesses.html">Witnesses</a></li>
                     </ul>
                 </div>
                 <div class="chapter">
@@ -65,7 +63,7 @@
                             <a href="../e6/closed-graphs.html">Closed graphs</a>
                         </li>
                         <li>
-                            <a href="../e6/obstructions.html">Obstructions</a>
+                            <a href="../e6/witnesses.html">Witnesses</a>
                         </li>
                     </ul>
                 </div>
@@ -80,8 +78,8 @@
                         nonzero scalar after substituting all known graph
                         evaluations. Each scalar is a rational multiple of the
                         obstruction polynomial \[
-                        (n-26)(n-14)(n-8)(n-5)(n-2)^2\, n\,(n+1)(n+2). \] The 38
-                        witnesses are listed below.
+                        (n-26)(n-14)(n-8)(n-5)(n-2)^2\, n\,(n+1)(n+2). \] The
+                        145 witnesses are listed below.
                     </p>
 
                     <p id="status">Loading &#8230;</p>
@@ -104,12 +102,12 @@
             const catalogue = document.getElementById("catalogue");
 
             async function load() {
-                const url = `${DATA_BASE}/projects/f4/cache/obstructions_t16.json`;
+                const url = `${DATA_BASE}/projects/f4/cache/witnesses_t16.json`;
                 status.textContent = "Loading \u2026";
                 try {
                     const data = await loadJSON(url);
                     const records = data.records || [];
-                    status.textContent = `${records.length} witness(es) at t = ${data.t ?? 16}`;
+                    status.textContent = `${records.length} witnesses at t = ${data.t ?? 16}`;
                     for (const r of records)
                         catalogue.appendChild(obstructionCard(r));
                     retypeset();

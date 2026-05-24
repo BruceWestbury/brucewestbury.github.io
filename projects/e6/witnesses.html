@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>E&#8326; Series &#8212; Bruce Westbury</title>
+        <title>
+            Obstructions &#8212; E&#8326; Series &#8212; Bruce Westbury
+        </title>
         <link rel="stylesheet" href="../../assets/css/site.css" />
         <script>
             window.MathJax = {
@@ -28,9 +30,7 @@
                 alt="Magic square"
             />
             <a class="site-title" href="../../index.html">Bruce Westbury</a>
-            <nav>
-                <a href="../../index.html">Home</a>
-            </nav>
+            <nav><a href="../../index.html">Home</a></nav>
             <button
                 class="menu-toggle"
                 id="menu-toggle"
@@ -52,9 +52,7 @@
                         <li>
                             <a href="../f4/closed-graphs.html">Closed graphs</a>
                         </li>
-                        <li>
-                            <a href="../f4/witnesses.html">Witnesses</a>
-                        </li>
+                        <li><a href="../f4/witnesses.html">Witnesses</a></li>
                     </ul>
                 </div>
                 <div class="chapter">
@@ -71,52 +69,54 @@
 
             <main class="main-content">
                 <div class="content-body">
-                    <h1>The E&#8326; series</h1>
+                    <h1>E&#8326; obstruction witnesses</h1>
 
                     <p>
-                        The E&#8326; series is a one-parameter family of
-                        diagrammatic categories associated to the
-                        sub-exceptional series of Lie algebras ending in
-                        E&#8326;. The graphs involved are closed bipartite cubic
-                        graphs. The parameter \(n\) is the dimension of a
-                        representation carrying an invariant element of the
-                        third symmetric power.
+                        At \(t = 22\), the 406 source relations are fully
+                        evaluated using the known closed-graph values at \(t =
+                        16, 18, 20, 22\). Each relation that yields a nonzero
+                        scalar is an obstruction witness. Every such scalar is a
+                        rational multiple of the degree-12 obstruction
+                        polynomial \[
+                        (n-27)(n-15)(n-9)(n-6)(n-3)^2(n-1)\,n^2(n+1)(n+3)^2. \]
+                        The witnesses are listed below.
                     </p>
 
-                    <p>
-                        The fundamental relation is the seven-term relation
-                        among five-boundary bipartite trivalent graphs. Together
-                        with reduction rules for bigons and squares, this allows
-                        evaluation of any closed bipartite cubic graph of girth
-                        at least 6.
-                    </p>
-
-                    <p>
-                        Every closed bipartite cubic graph of girth &#8805; 6 up
-                        to 22 vertices can be evaluated. Consistency requires
-                        the degree-12 polynomial \[
-                        (n-27)(n-15)(n-9)(n-6)(n-3)^2(n-1)\,n^2(n+1)(n+3)^2 = 0
-                        \] (Thurston 2004). The twelve roots correspond to Lie
-                        algebras in the E&#8326; row of Freudenthal&#8217;s
-                        magic square.
-                    </p>
-
-                    <p>
-                        The computation at \(t = 22\) is larger than the
-                        F&#8324; computation: there are 406 source graphs
-                        yielding 406 relations.
-                    </p>
+                    <p id="status">Loading &#8230;</p>
+                    <div id="catalogue" class="catalogue"></div>
 
                     <nav class="page-nav">
-                        <span class="placeholder"></span>
-                        <a class="next" href="closed-graphs.html"
+                        <a class="prev" href="closed-graphs.html"
                             >Closed graphs</a
                         >
+                        <span class="placeholder"></span>
                     </nav>
                 </div>
             </main>
         </div>
 
         <script src="../../assets/js/site.js"></script>
+        <script src="../../assets/js/catalogue.js"></script>
+        <script>
+            const status = document.getElementById("status");
+            const catalogue = document.getElementById("catalogue");
+
+            async function load() {
+                const url = `${DATA_BASE}/projects/e6/cache/closed/witnesses_t22.json`;
+                status.textContent = "Loading \u2026";
+                try {
+                    const data = await loadJSON(url);
+                    const records = data.records || [];
+                    status.textContent = `${records.length} witnesses at t = ${data.t ?? 22}`;
+                    for (const r of records)
+                        catalogue.appendChild(obstructionCard(r));
+                    retypeset();
+                } catch (e) {
+                    status.textContent = `Error: ${e.message}`;
+                }
+            }
+
+            load();
+        </script>
     </body>
 </html>
