@@ -7,80 +7,26 @@
         <link rel="stylesheet" href="assets/css/site.css" />
     </head>
     <body>
-        <header class="topbar">
-            <img
-                src="assets/images/magic_square_logo.svg"
-                class="logo"
-                alt="Magic square"
-            />
-            <a class="site-title" href="index.html">Bruce Westbury</a>
-            <nav>
-                <a href="./docs/build/html/publications.html">Publications</a>
-                <a href="./docs/build/html/about.html">About</a>
-            </nav>
-            <button
-                class="menu-toggle"
-                id="menu-toggle"
-                aria-label="Toggle menu"
-            >
-                &#9776;
-            </button>
-        </header>
+        <header id="site-header"></header>
 
         <div class="page-wrapper">
-            <nav class="sidebar" id="sidebar">
-                <div class="sidebar-heading">Contents</div>
-                <div class="chapter">
-                    <a class="chapter-title" href="projects/f4/index.html"
-                        >F&#8324; Series</a
-                    >
-                    <ul>
-                        <li>
-                            <a href="projects/f4/index.html">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="projects/f4/closed-graphs.html"
-                                >Closed graphs</a
-                            >
-                        </li>
-                        <li>
-                            <a href="projects/f4/witnesses.html">Witnesses</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="chapter">
-                    <a class="chapter-title" href="projects/e6/index.html"
-                        >E&#8326; Series</a
-                    >
-                    <ul>
-                        <li>
-                            <a href="projects/e6/index.html">Introduction</a>
-                        </li>
-                        <li>
-                            <a href="projects/e6/closed-graphs.html"
-                                >Closed graphs</a
-                            >
-                        </li>
-                        <li>
-                            <a href="projects/e6/witnesses.html">Witnesses</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <nav id="site-sidebar" class="sidebar"></nav>
 
             <main class="main-content">
                 <div class="content-body">
                     <h1>Bruce Westbury</h1>
                     <p>
-                        <a href="./docs/build/html/introduction.html"
+                        <a href="docs/build/html/introduction.html"
                             >Introduction</a
                         >
                     </p>
                 </div>
-                <!-- no page-nav for root pages -->
             </main>
         </div>
 
+        <script>
+            window.SITE_ROOT = ".";
+        </script>
         <script src="assets/js/site.js"></script>
     </body>
 </html>

@@ -23,53 +23,10 @@
         ></script>
     </head>
     <body>
-        <header class="topbar">
-            <img
-                src="../../assets/images/magic_square_logo.svg"
-                class="logo"
-                alt="Magic square"
-            />
-            <a class="site-title" href="../../index.html">Bruce Westbury</a>
-            <nav>
-                <a href="../../index.html">Home</a>
-            </nav>
-            <button
-                class="menu-toggle"
-                id="menu-toggle"
-                aria-label="Toggle menu"
-            >
-                &#9776;
-            </button>
-        </header>
+        <header id="site-header"></header>
 
         <div class="page-wrapper">
-            <nav class="sidebar" id="sidebar">
-                <div class="sidebar-heading">Contents</div>
-                <div class="chapter">
-                    <a class="chapter-title" href="../f4/index.html"
-                        >F&#8324; Series</a
-                    >
-                    <ul>
-                        <li><a href="../f4/index.html">Introduction</a></li>
-                        <li>
-                            <a href="../f4/closed-graphs.html">Closed graphs</a>
-                        </li>
-                        <li>
-                            <a href="../f4/witnesses.html">Witnesses</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="chapter">
-                    <a class="chapter-title" href="index.html"
-                        >E&#8326; Series</a
-                    >
-                    <ul>
-                        <li><a href="index.html">Introduction</a></li>
-                        <li><a href="closed-graphs.html">Closed graphs</a></li>
-                        <li><a href="witnesses.html">Witnesses</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <nav id="site-sidebar" class="sidebar"></nav>
 
             <main class="main-content">
                 <div class="content-body">
@@ -77,8 +34,8 @@
 
                     <p>
                         Connected simple bipartite cubic graphs of girth &#8805;
-                        6, for \(t = 14,16, 18, 20, 22\) vertices. Graph counts:
-                        \(t=16\) has 1, \(t=18\) has 3, \(t=20\) has 10,
+                        6, for \(t = 14, 16, 18, 20, 22\) vertices. Graph
+                        counts: \(t=16\) has 1, \(t=18\) has 3, \(t=20\) has 10,
                         \(t=22\) has 28. Evaluations are computed using
                         <code>E6_series_quotient</code>. Data is loaded from
                         cached JSON.
@@ -104,6 +61,9 @@
             </main>
         </div>
 
+        <script>
+            window.SITE_ROOT = "../..";
+        </script>
         <script src="../../assets/js/site.js"></script>
         <script src="../../assets/js/catalogue.js"></script>
         <script>
@@ -141,7 +101,7 @@
             }
 
             load(16);
-            setActive(document.querySelector('button[data-t="14"]'));
+            setActive(document.querySelector('button[data-t="16"]'));
         </script>
     </body>
 </html>
