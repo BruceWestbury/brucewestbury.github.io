@@ -38,7 +38,7 @@
                         rational multiple of the degree-12 obstruction
                         polynomial \[
                         (n-27)(n-15)(n-9)(n-6)(n-3)^2(n-1)\,n^2(n+1)(n+3)^2. \]
-                        The witnesses are listed below.
+                        The 149 witnesses are listed below.
                     </p>
 
                     <p id="status">Loading &#8230;</p>
@@ -64,7 +64,7 @@
             const catalogue = document.getElementById("catalogue");
 
             async function load() {
-                const url = `${DATA_BASE}/projects/e6/cache/closed/witnesses_t22.json`;
+                const url = `${DATA_BASE}/projects/e6/cache/witnesses_t22.json`;
                 status.textContent = "Loading \u2026";
                 try {
                     const data = await loadJSON(url);
