@@ -54,6 +54,7 @@ Thumbs.db
 # Misc
 # =========================
 *.pdf
+!F4E6.pdf
 *.txt
 *.bak
 *.tmp
