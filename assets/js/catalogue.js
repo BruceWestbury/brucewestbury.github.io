@@ -1,9 +1,5 @@
 /* catalogue.js — shared catalogue rendering utilities */
 
-// Base URL for cubic-jordan data (JSON caches).
-// cubic-jordan is deployed as a GitHub Pages site at this URL.
-const DATA_BASE = "https://brucewestbury.github.io/cubic-jordan";
-
 // ── Helpers ───────────────────────────────────────────────
 
 function sagePolynomialToLatex(text) {

@@ -82,7 +82,7 @@
             }
 
             async function load(t) {
-                const url = `${DATA_BASE}/projects/f4/cache/closed/closed_t${t}.json`;
+                const url = `/projects/f4/cache/closed_t${t}.json`;
                 status.textContent = `Loading t = ${t} \u2026`;
                 catalogue.innerHTML = "";
                 try {

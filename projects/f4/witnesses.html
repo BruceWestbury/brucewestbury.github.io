@@ -62,7 +62,7 @@
             const catalogue = document.getElementById("catalogue");
 
             async function load() {
-                const url = `${DATA_BASE}/projects/f4/cache/witnesses_t16.json`;
+                const url = `/projects/f4/cache/witnesses_t16.json`;
                 status.textContent = "Loading \u2026";
                 try {
                     const data = await loadJSON(url);
