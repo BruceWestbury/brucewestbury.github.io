@@ -1,0 +1,474 @@
+{
+  "levels": [
+    {
+      "level": 0,
+      "labels": [
+        {
+          "label": "I",
+          "coordinates": null
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "labels": [
+        {
+          "label": "L",
+          "coordinates": null
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "labels": [
+        {
+          "label": "V2100",
+          "coordinates": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "V2010",
+          "coordinates": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V2001",
+          "coordinates": [
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "labels": [
+        {
+          "label": "V3100",
+          "coordinates": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "V3010",
+          "coordinates": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V3001",
+          "coordinates": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "V3011",
+          "coordinates": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "label": "V3110",
+          "coordinates": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V3111",
+          "coordinates": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "labels": [
+        {
+          "label": "V4100",
+          "coordinates": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "V4001",
+          "coordinates": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "V4010",
+          "coordinates": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V4011",
+          "coordinates": [
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "label": "V4110",
+          "coordinates": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V4111",
+          "coordinates": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "label": "V4120",
+          "coordinates": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "label": "V4210",
+          "coordinates": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V4021",
+          "coordinates": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "label": "V4012",
+          "coordinates": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "label": "V4132",
+          "coordinates": [
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "label": "V4123",
+          "coordinates": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "label": "V4321",
+          "coordinates": [
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "label": "V4231",
+          "coordinates": [
+            2,
+            3,
+            1
+          ]
+        },
+        {
+          "label": "V4242",
+          "coordinates": [
+            2,
+            4,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "labels": [
+        {
+          "label": "V5100",
+          "coordinates": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "label": "V5001",
+          "coordinates": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "label": "V5010",
+          "coordinates": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V5013",
+          "coordinates": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "label": "V5130",
+          "coordinates": [
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "label": "V5031",
+          "coordinates": [
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "label": "V5310",
+          "coordinates": [
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "label": "V5023",
+          "coordinates": [
+            0,
+            2,
+            3
+          ]
+        },
+        {
+          "label": "V5032",
+          "coordinates": [
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "label": "V5230",
+          "coordinates": [
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "label": "V5320",
+          "coordinates": [
+            3,
+            2,
+            0
+          ]
+        },
+        {
+          "label": "V5033",
+          "coordinates": [
+            0,
+            3,
+            3
+          ]
+        },
+        {
+          "label": "V5330",
+          "coordinates": [
+            3,
+            3,
+            0
+          ]
+        },
+        {
+          "label": "V5163",
+          "coordinates": [
+            1,
+            6,
+            3
+          ]
+        },
+        {
+          "label": "V5361",
+          "coordinates": [
+            3,
+            6,
+            1
+          ]
+        },
+        {
+          "label": "V5136",
+          "coordinates": [
+            1,
+            3,
+            6
+          ]
+        },
+        {
+          "label": "V5631",
+          "coordinates": [
+            6,
+            3,
+            1
+          ]
+        },
+        {
+          "label": "V5366",
+          "coordinates": [
+            3,
+            6,
+            6
+          ]
+        },
+        {
+          "label": "V5663",
+          "coordinates": [
+            6,
+            6,
+            3
+          ]
+        },
+        {
+          "label": "V5393",
+          "coordinates": [
+            3,
+            9,
+            3
+          ]
+        },
+        {
+          "label": "V5299",
+          "coordinates": [
+            2,
+            9,
+            9
+          ]
+        },
+        {
+          "label": "V5686",
+          "coordinates": [
+            6,
+            8,
+            6
+          ]
+        },
+        {
+          "label": "V5398",
+          "coordinates": [
+            3,
+            9,
+            8
+          ]
+        },
+        {
+          "label": "V5893",
+          "coordinates": [
+            8,
+            9,
+            3
+          ]
+        },
+        {
+          "label": "V53116",
+          "coordinates": [
+            3,
+            11,
+            6
+          ]
+        },
+        {
+          "label": "V5992",
+          "coordinates": [
+            9,
+            9,
+            2
+          ]
+        },
+        {
+          "label": "V56113",
+          "coordinates": [
+            6,
+            11,
+            3
+          ]
+        },
+        {
+          "label": "V56126",
+          "coordinates": [
+            6,
+            12,
+            6
+          ]
+        },
+        {
+          "label": "V56159",
+          "coordinates": [
+            6,
+            15,
+            9
+          ]
+        },
+        {
+          "label": "V59156",
+          "coordinates": [
+            9,
+            15,
+            6
+          ]
+        }
+      ]
+    }
+  ]
+}

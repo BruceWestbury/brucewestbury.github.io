@@ -1,0 +1,14 @@
+{
+  "zenodo_record": "https://zenodo.org/records/21335054",
+  "doi": "10.5281/zenodo.21335054",
+  "files": {
+    "stored/labels.json": "8d2f5a354a4ee8c4a6dc3187ab578291f1a2d5107bec14b7866bb32e95500abc",
+    "stored/characters.json": "f40ccf43bd1ece1fa3975f6325c4f72d1d0f36368bfd8deb4f165cd3701465c8",
+    "stored/quantum_dimensions.json": "4e715865e236d4b6ca5b984745584820e558da7315f928c95265a842f01ca9c0",
+    "stored/schur_functors.json": "59fdc0c1c4e7aa1ea35de38acdaa8fa75b2dc507fc056ce3dd6e0213129c3d61",
+    "stored/orthogonal_functors.json": "f90b039d03f9ad6b0ac30e00e80b254e583113dfc543187d14e66f84b39244fe",
+    "stored/bratteli_matrices.json": "03eedf9926f2ce0556e6d625862e0b18577b3164403359c15c7794c875d8f931",
+    "stored/products.json": "a136a38c47070a8b3e1669bde32868a7fe5de26333db6b6357f289a68f095c2e",
+    "derived/quantum_dimensions_rational_level5.json": "5df216760da63e13c75947d0304cd060240eaa001aaf10535ddca7a015fb46a7"
+  }
+}

@@ -158,6 +158,15 @@ a:hover {
     margin: 0.1rem 0;
 }
 
+.sidebar ul .sidebar-section {
+    margin: 0.65rem 0 0.15rem 0.5rem;
+    color: var(--color-muted);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
 .sidebar ul a {
     font-size: 0.85rem;
     text-decoration: none;

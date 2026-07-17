@@ -56,6 +56,22 @@
         { label: "Witnesses", href: `${R}/projects/e6/witnesses.html` },
       ],
     },
+    {
+      title: "Exceptional series",
+      href: `${R}/projects/exceptional/index.html`,
+      pages: [
+        { label: "Introduction", href: `${R}/projects/exceptional/index.html` },
+        { heading: "Generic structure" },
+        { label: "Labels and Casimirs", href: `${R}/projects/exceptional/labels.html` },
+        { label: "Branching matrices", href: `${R}/projects/exceptional/branching.html` },
+        { label: "Products", href: `${R}/projects/exceptional/products.html` },
+        { label: "Quantum dimensions", href: `${R}/projects/exceptional/quantum-dimensions.html` },
+        { label: "Schur functors", href: `${R}/projects/exceptional/schur-functors.html` },
+        { label: "Orthogonal functors", href: `${R}/projects/exceptional/orthogonal-functors.html` },
+        { heading: "Characters" },
+        { label: "Character tables", href: `${R}/projects/exceptional/characters.html` },
+      ],
+    },
   ];
 
   // ── Build <header> ────────────────────────────────────────
@@ -87,8 +103,12 @@
             <div class="chapter">
                 <a class="chapter-title" href="${ch.href}">${ch.title}</a>
                 <ul>
-                    ${ch.pages
-                      .map((p) => `<li><a href="${p.href}">${p.label}</a></li>`)
+                    ${(ch.pages || [])
+                      .map((p) =>
+                        p.heading
+                          ? `<li class="sidebar-section">${p.heading}</li>`
+                          : `<li><a href="${p.href}">${p.label}</a></li>`,
+                      )
                       .join("\n                    ")}
                 </ul>
             </div>`,

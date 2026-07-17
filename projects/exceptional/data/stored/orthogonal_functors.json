@@ -1,0 +1,1735 @@
+{
+  "max_degree": 5,
+  "tables": [
+    {
+      "degree": 1,
+      "entries": [
+        {
+          "partition": "[1]",
+          "orthogonal_basis": "o[1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1
+          }
+        }
+      ]
+    },
+    {
+      "degree": 2,
+      "entries": [
+        {
+          "partition": "[2]",
+          "orthogonal_basis": "o[2]",
+          "in_schur_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[1,1]",
+              "coefficient": "1/2"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "1/2"
+            }
+          ],
+          "functor_on_L": {
+            "V2001": 1,
+            "V2100": 1
+          }
+        },
+        {
+          "partition": "[1,1]",
+          "orthogonal_basis": "o[1,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[2]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "1/2"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "-1/2"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1,
+            "V2010": 1
+          }
+        }
+      ]
+    },
+    {
+      "degree": 3,
+      "entries": [
+        {
+          "partition": "[3]",
+          "orthogonal_basis": "o[3]",
+          "in_schur_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1/2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1/3"
+            }
+          ],
+          "functor_on_L": {
+            "V2010": 1,
+            "V3001": 1,
+            "V3100": 1,
+            "V3111": 1
+          }
+        },
+        {
+          "partition": "[2,1]",
+          "orthogonal_basis": "o[2,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "1/3"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1/3"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1,
+            "V2001": 1,
+            "V2010": 1,
+            "V2100": 1,
+            "V3011": 1,
+            "V3110": 1,
+            "V3111": 1
+          }
+        },
+        {
+          "partition": "[1,1,1]",
+          "orthogonal_basis": "o[1,1,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[3]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1/3"
+            }
+          ],
+          "functor_on_L": {
+            "I": 1,
+            "V2001": 1,
+            "V2010": 1,
+            "V2100": 1,
+            "V3010": 1
+          }
+        }
+      ]
+    },
+    {
+      "degree": 4,
+      "entries": [
+        {
+          "partition": "[4]",
+          "orthogonal_basis": "o[4]",
+          "in_schur_basis": [
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "-3"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "2"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1/24"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "1/4"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "1/3"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "1/4"
+            }
+          ],
+          "functor_on_L": {
+            "V2001": 1,
+            "V2100": 1,
+            "V3010": 1,
+            "V3011": 1,
+            "V3110": 1,
+            "V4001": 1,
+            "V4100": 1,
+            "V4111": 1,
+            "V4123": 1,
+            "V4321": 1
+          }
+        },
+        {
+          "partition": "[3,1]",
+          "orthogonal_basis": "o[3,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "1/4"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "-1/8"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "-1/4"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1,
+            "V2001": 1,
+            "V2010": 2,
+            "V2100": 1,
+            "V3001": 1,
+            "V3010": 1,
+            "V3011": 2,
+            "V3100": 1,
+            "V3110": 2,
+            "V3111": 3,
+            "V4012": 1,
+            "V4123": 1,
+            "V4132": 1,
+            "V4210": 1,
+            "V4231": 1,
+            "V4242": 1,
+            "V4321": 1
+          }
+        },
+        {
+          "partition": "[2,2]",
+          "orthogonal_basis": "o[2,2]",
+          "in_schur_basis": [
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1/12"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1/4"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "-1/3"
+            }
+          ],
+          "functor_on_L": {
+            "I": 1,
+            "V2001": 2,
+            "V2010": 1,
+            "V2100": 2,
+            "V3010": 2,
+            "V3011": 1,
+            "V3110": 1,
+            "V3111": 1,
+            "V4011": 1,
+            "V4110": 1,
+            "V4111": 1,
+            "V4123": 1,
+            "V4242": 1,
+            "V4321": 1
+          }
+        },
+        {
+          "partition": "[2,1,1]",
+          "orthogonal_basis": "o[2,1,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[2]",
+              "coefficient": "1/2"
+            },
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "-1/4"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "-1/8"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "1/4"
+            }
+          ],
+          "functor_on_L": {
+            "L": 2,
+            "V2001": 1,
+            "V2010": 3,
+            "V2100": 1,
+            "V3001": 1,
+            "V3010": 1,
+            "V3011": 2,
+            "V3100": 1,
+            "V3110": 2,
+            "V3111": 3,
+            "V4021": 1,
+            "V4120": 1,
+            "V4132": 1,
+            "V4231": 1,
+            "V4242": 1
+          }
+        },
+        {
+          "partition": "[1,1,1,1]",
+          "orthogonal_basis": "o[1,1,1,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[4]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "-3"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "2"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1,1,1]",
+              "coefficient": "1/24"
+            },
+            {
+              "partition": "[2,1,1]",
+              "coefficient": "-1/4"
+            },
+            {
+              "partition": "[2,2]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[3,1]",
+              "coefficient": "1/3"
+            },
+            {
+              "partition": "[4]",
+              "coefficient": "-1/4"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1,
+            "V2001": 1,
+            "V2100": 1,
+            "V3010": 1,
+            "V3011": 1,
+            "V3110": 1,
+            "V3111": 1,
+            "V4010": 1
+          }
+        }
+      ]
+    },
+    {
+      "degree": 5,
+      "entries": [
+        {
+          "partition": "[5]",
+          "orthogonal_basis": "o[5]",
+          "in_schur_basis": [
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "-4"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "3"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "3"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1/3"
+            },
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1/120"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "1/12"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1/4"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1/5"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1,
+            "V2010": 1,
+            "V3001": 1,
+            "V3011": 1,
+            "V3100": 1,
+            "V3110": 1,
+            "V3111": 2,
+            "V4012": 1,
+            "V4021": 1,
+            "V4120": 1,
+            "V4132": 1,
+            "V4210": 1,
+            "V4231": 1,
+            "V4242": 1,
+            "V5001": 1,
+            "V5100": 1,
+            "V5136": 1,
+            "V5366": 1,
+            "V5631": 1,
+            "V5663": 1,
+            "V5686": 1
+          }
+        },
+        {
+          "partition": "[4,1]",
+          "orthogonal_basis": "o[4,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "2"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1/30"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "-1/5"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1,
+            "V2001": 2,
+            "V2010": 3,
+            "V2100": 2,
+            "V3001": 2,
+            "V3010": 3,
+            "V3011": 4,
+            "V3100": 2,
+            "V3110": 4,
+            "V3111": 5,
+            "V4001": 1,
+            "V4010": 1,
+            "V4011": 1,
+            "V4012": 2,
+            "V4021": 2,
+            "V4100": 1,
+            "V4110": 1,
+            "V4111": 1,
+            "V4120": 2,
+            "V4123": 3,
+            "V4132": 3,
+            "V4210": 2,
+            "V4231": 3,
+            "V4242": 4,
+            "V4321": 3,
+            "V5013": 1,
+            "V5136": 1,
+            "V5299": 1,
+            "V5310": 1,
+            "V5366": 1,
+            "V5398": 1,
+            "V56126": 1,
+            "V56159": 1,
+            "V5631": 1,
+            "V5663": 1,
+            "V5686": 1,
+            "V5893": 1,
+            "V59156": 1,
+            "V5992": 1
+          }
+        },
+        {
+          "partition": "[3,2]",
+          "orthogonal_basis": "o[3,2]",
+          "in_schur_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1/24"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "1/12"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-1/4"
+            }
+          ],
+          "functor_on_L": {
+            "L": 2,
+            "V2001": 2,
+            "V2010": 4,
+            "V2100": 2,
+            "V3001": 2,
+            "V3010": 3,
+            "V3011": 5,
+            "V3100": 2,
+            "V3110": 5,
+            "V3111": 7,
+            "V4010": 1,
+            "V4011": 1,
+            "V4012": 2,
+            "V4021": 3,
+            "V4110": 1,
+            "V4111": 1,
+            "V4120": 3,
+            "V4123": 3,
+            "V4132": 4,
+            "V4210": 2,
+            "V4231": 4,
+            "V4242": 5,
+            "V4321": 3,
+            "V5023": 1,
+            "V5136": 1,
+            "V5299": 1,
+            "V53116": 1,
+            "V5320": 1,
+            "V5366": 1,
+            "V5398": 1,
+            "V56113": 1,
+            "V56126": 1,
+            "V56159": 1,
+            "V5631": 1,
+            "V5663": 1,
+            "V5686": 2,
+            "V5893": 1,
+            "V59156": 1,
+            "V5992": 1
+          }
+        },
+        {
+          "partition": "[3,1,1]",
+          "orthogonal_basis": "o[3,1,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1/2"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1/2"
+            },
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1/20"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "-1/4"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1/5"
+            }
+          ],
+          "functor_on_L": {
+            "I": 1,
+            "L": 1,
+            "V2001": 5,
+            "V2010": 4,
+            "V2100": 5,
+            "V3001": 1,
+            "V3010": 7,
+            "V3011": 6,
+            "V3100": 1,
+            "V3110": 6,
+            "V3111": 6,
+            "V4001": 1,
+            "V4010": 2,
+            "V4011": 2,
+            "V4012": 2,
+            "V4021": 2,
+            "V4100": 1,
+            "V4110": 2,
+            "V4111": 3,
+            "V4120": 2,
+            "V4123": 5,
+            "V4132": 4,
+            "V4210": 2,
+            "V4231": 4,
+            "V4242": 6,
+            "V4321": 5,
+            "V5033": 1,
+            "V5163": 1,
+            "V5299": 1,
+            "V53116": 1,
+            "V5330": 1,
+            "V5361": 1,
+            "V5393": 1,
+            "V5398": 1,
+            "V56113": 1,
+            "V56126": 1,
+            "V56159": 2,
+            "V5893": 1,
+            "V59156": 2,
+            "V5992": 1
+          }
+        },
+        {
+          "partition": "[2,2,1]",
+          "orthogonal_basis": "o[2,2,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[2,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1/3"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "1/3"
+            },
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1/24"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "-1/12"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1/4"
+            }
+          ],
+          "functor_on_L": {
+            "L": 3,
+            "V2001": 2,
+            "V2010": 5,
+            "V2100": 2,
+            "V3001": 2,
+            "V3010": 4,
+            "V3011": 5,
+            "V3100": 2,
+            "V3110": 5,
+            "V3111": 7,
+            "V4010": 2,
+            "V4011": 1,
+            "V4012": 1,
+            "V4021": 3,
+            "V4110": 1,
+            "V4111": 1,
+            "V4120": 3,
+            "V4123": 2,
+            "V4132": 4,
+            "V4210": 1,
+            "V4231": 4,
+            "V4242": 5,
+            "V4321": 2,
+            "V5032": 1,
+            "V5230": 1,
+            "V5299": 1,
+            "V53116": 1,
+            "V5366": 1,
+            "V5393": 1,
+            "V5398": 1,
+            "V56113": 1,
+            "V56126": 1,
+            "V56159": 1,
+            "V5663": 1,
+            "V5686": 1,
+            "V5893": 1,
+            "V59156": 1,
+            "V5992": 1
+          }
+        },
+        {
+          "partition": "[2,1,1,1]",
+          "orthogonal_basis": "o[2,1,1,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "-1"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "2"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "-1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1,1]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[2,1]",
+              "coefficient": "1/2"
+            },
+            {
+              "partition": "[3]",
+              "coefficient": "-1/3"
+            },
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1/30"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "-1/5"
+            }
+          ],
+          "functor_on_L": {
+            "L": 2,
+            "V2001": 3,
+            "V2010": 4,
+            "V2100": 3,
+            "V3001": 1,
+            "V3010": 4,
+            "V3011": 4,
+            "V3100": 1,
+            "V3110": 4,
+            "V3111": 5,
+            "V4010": 2,
+            "V4011": 1,
+            "V4012": 1,
+            "V4021": 2,
+            "V4110": 1,
+            "V4111": 1,
+            "V4120": 2,
+            "V4123": 2,
+            "V4132": 3,
+            "V4210": 1,
+            "V4231": 3,
+            "V4242": 4,
+            "V4321": 2,
+            "V5031": 1,
+            "V5130": 1,
+            "V5163": 1,
+            "V53116": 1,
+            "V5361": 1,
+            "V5393": 1,
+            "V56113": 1,
+            "V56126": 1,
+            "V56159": 1,
+            "V59156": 1
+          }
+        },
+        {
+          "partition": "[1,1,1,1,1]",
+          "orthogonal_basis": "o[1,1,1,1,1]",
+          "in_schur_basis": [
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1"
+            }
+          ],
+          "in_elementary_basis": [
+            {
+              "partition": "[5]",
+              "coefficient": "1"
+            }
+          ],
+          "in_homogeneous_basis": [
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "-4"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "3"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "3"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-2"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1"
+            }
+          ],
+          "in_power_sum_basis": [
+            {
+              "partition": "[1,1,1,1,1]",
+              "coefficient": "1/120"
+            },
+            {
+              "partition": "[2,1,1,1]",
+              "coefficient": "-1/12"
+            },
+            {
+              "partition": "[2,2,1]",
+              "coefficient": "1/8"
+            },
+            {
+              "partition": "[3,1,1]",
+              "coefficient": "1/6"
+            },
+            {
+              "partition": "[3,2]",
+              "coefficient": "-1/6"
+            },
+            {
+              "partition": "[4,1]",
+              "coefficient": "-1/4"
+            },
+            {
+              "partition": "[5]",
+              "coefficient": "1/5"
+            }
+          ],
+          "functor_on_L": {
+            "L": 1,
+            "V2010": 2,
+            "V3001": 1,
+            "V3011": 1,
+            "V3100": 1,
+            "V3110": 1,
+            "V3111": 2,
+            "V4010": 1,
+            "V4021": 1,
+            "V4120": 1,
+            "V4132": 1,
+            "V4231": 1,
+            "V4242": 1,
+            "V5010": 1
+          }
+        }
+      ]
+    }
+  ]
+}

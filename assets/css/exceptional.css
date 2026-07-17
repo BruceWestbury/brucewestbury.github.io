@@ -1,0 +1,360 @@
+/* Exceptional-series tables and controls. */
+
+.exceptional-main {
+    width: 100%;
+}
+
+.exceptional-content {
+    width: 100%;
+    max-width: 1480px;
+}
+
+.exceptional-content .lede {
+    max-width: 780px;
+}
+
+.exceptional-content .source-line {
+    color: var(--color-muted);
+    font-family: system-ui, sans-serif;
+    font-size: 0.88rem;
+}
+
+.exceptional-section-list {
+    max-width: 780px;
+}
+
+.exceptional-view {
+    margin-top: 1.25rem;
+}
+
+.exceptional-status {
+    color: var(--color-muted);
+    font-family: system-ui, sans-serif;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+
+.exceptional-error {
+    border-left: 3px solid #9b2c2c;
+    color: #7a1f1f;
+    padding-left: 0.75rem;
+}
+
+.table-controls {
+    align-items: end;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.25rem;
+    margin: 1rem 0;
+    font-family: system-ui, sans-serif;
+}
+
+.table-controls label {
+    display: grid;
+    gap: 0.25rem;
+    color: var(--color-muted);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.table-controls select {
+    min-width: 11rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    padding: 0.42rem 2rem 0.42rem 0.55rem;
+    font: inherit;
+    font-size: 0.9rem;
+}
+
+.level-tabs {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid #999;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: system-ui, sans-serif;
+}
+
+.level-tabs button {
+    min-width: 2.55rem;
+    border: 0;
+    border-right: 1px solid #bbb;
+    border-radius: 0;
+    background: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 0.38rem 0.65rem;
+    font: inherit;
+    font-size: 0.86rem;
+}
+
+.level-tabs button:last-child {
+    border-right: 0;
+}
+
+.level-tabs button:hover {
+    background: #eee;
+}
+
+.level-tabs button.active {
+    background: var(--color-text);
+    color: #fff;
+}
+
+.table-scroll {
+    width: 100%;
+    overflow: auto;
+    margin: 0.75rem 0 1.5rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+}
+
+.matrix-scroll {
+    max-height: 72vh;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--color-surface);
+    font-size: 0.91rem;
+}
+
+.data-table th,
+.data-table td {
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0.48rem 0.62rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.data-table tr:last-child td,
+.data-table tr:last-child th {
+    border-bottom: 0;
+}
+
+.data-table th:last-child,
+.data-table td:last-child {
+    border-right: 0;
+}
+
+.data-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: #f3f3f3;
+    color: var(--color-text);
+    font-family: system-ui, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.data-table tbody th {
+    background: #fbfbfb;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.data-table .sticky-column {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: #fbfbfb;
+}
+
+.data-table thead .sticky-column {
+    z-index: 4;
+    background: #f3f3f3;
+}
+
+.labels-table {
+    max-width: 760px;
+}
+
+.labels-table td:nth-child(2),
+.labels-table td:nth-child(3) {
+    white-space: nowrap;
+}
+
+.character-table {
+    min-width: 980px;
+    table-layout: fixed;
+}
+
+.character-table th:first-child,
+.character-table td:first-child {
+    width: 10rem;
+}
+
+.character-table th:not(:first-child),
+.character-table td:not(:first-child) {
+    width: 14rem;
+}
+
+.character-expression,
+.linear-combination,
+.factor-list,
+.basis-expression {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.1rem 0.32rem;
+}
+
+.character-term,
+.linear-term,
+.quantum-factor,
+.basis-term {
+    white-space: nowrap;
+}
+
+.qdim-table {
+    min-width: 980px;
+    table-layout: fixed;
+}
+
+.qdim-table th:first-child,
+.qdim-table td:first-child {
+    width: 10rem;
+}
+
+.qdim-table th:nth-child(2),
+.qdim-table td:nth-child(2),
+.qdim-table th:nth-child(3),
+.qdim-table td:nth-child(3) {
+    width: 42%;
+}
+
+.products-table th:first-child,
+.products-table td:first-child,
+.schur-table th:first-child,
+.schur-table td:first-child {
+    width: 16rem;
+    white-space: nowrap;
+}
+
+.schur-table th:nth-child(2),
+.schur-table td:nth-child(2) {
+    width: 7rem;
+    text-align: center;
+}
+
+.orthogonal-table {
+    min-width: 1500px;
+    table-layout: fixed;
+}
+
+.orthogonal-table th,
+.orthogonal-table td {
+    width: 15rem;
+}
+
+.orthogonal-table th:first-child,
+.orthogonal-table td:first-child {
+    width: 8rem;
+}
+
+.orthogonal-table th:last-child,
+.orthogonal-table td:last-child {
+    width: 28rem;
+}
+
+.matrix-table {
+    width: max-content;
+    min-width: 100%;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 0.76rem;
+}
+
+.matrix-table th,
+.matrix-table td {
+    min-width: 2.15rem;
+    padding: 0.28rem 0.4rem;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.matrix-table th {
+    font-family: system-ui, sans-serif;
+    font-size: 0.7rem;
+}
+
+.matrix-table tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+
+.matrix-table .matrix-zero {
+    color: #aaa;
+}
+
+.matrix-meta {
+    color: var(--color-muted);
+    font-family: system-ui, sans-serif;
+    font-size: 0.84rem;
+    margin: 0.5rem 0;
+}
+
+.math-label {
+    white-space: nowrap;
+    font-family: Georgia, serif;
+}
+
+.math-label sub {
+    font-size: 0.72em;
+    vertical-align: -0.28em;
+}
+
+.omitted-formulas {
+    max-width: 900px;
+    margin: 1.5rem 0;
+    padding-top: 0.25rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.omitted-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    margin: 0.65rem 0 0.9rem;
+}
+
+.raw-data-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    margin: 1.25rem 0;
+    font-family: system-ui, sans-serif;
+    font-size: 0.86rem;
+}
+
+@media (max-width: 768px) {
+    .exceptional-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .table-controls {
+        align-items: stretch;
+        display: grid;
+    }
+
+    .table-controls select {
+        width: 100%;
+    }
+
+    .level-tabs {
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .matrix-scroll {
+        max-height: 68vh;
+    }
+}
