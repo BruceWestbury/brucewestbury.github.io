@@ -319,6 +319,26 @@
     border-top: 1px solid var(--color-border);
 }
 
+.machine-data {
+    max-width: 74rem;
+    margin-top: 2.5rem;
+}
+
+.machine-data pre {
+    overflow-x: auto;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    background: #f7f7f7;
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+
+.machine-data pre code {
+    padding: 0;
+    background: transparent;
+}
+
 .omitted-labels {
     display: flex;
     flex-wrap: wrap;

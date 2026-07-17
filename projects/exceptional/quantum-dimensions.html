@@ -27,6 +27,69 @@
                     <div class="exceptional-view" data-exceptional-view="quantum-dimensions">
                         <p class="exceptional-status">Loading quantum dimensions...</p>
                     </div>
+                    <section class="machine-data">
+                        <h2>Machine-readable data</h2>
+                        <p>
+                            JSON is a text format for labelled lists. A
+                            browser may display it either as a collapsible tree
+                            or under a <em>Raw Data</em> tab; these are two
+                            views of the same file.
+                        </p>
+                        <p>
+                            <code>quantum_dimensions.json</code> contains 45
+                            records under the heading
+                            <code>quantum_dimensions</code>. Of these, 44 have
+                            <code>kind: pair_product</code>. If
+                            <code>numerator</code> is the list
+                            <span class="math-label"
+                                >[[r<sub>i</sub>,s<sub>i</sub>]]</span
+                            > and <code>denominator</code> is
+                            <span class="math-label"
+                                >[[u<sub>j</sub>,v<sub>j</sub>]]</span
+                            >, the record means
+                            \[
+                            \dim_q(V)=\mathtt{sign}
+                            \frac{\prod_i[r_i,s_i]}{\prod_j[u_j,v_j]}.
+                            \]
+                            The remaining record, for
+                            <span class="math-label"
+                                >V<sub>5</sub>(0,1,0)</span
+                            >, has
+                            <code>kind: polynomial_functor</code> and stores the
+                            defining expression instead. The field
+                            <code>label_involution</code> gives the partner
+                            label.
+                        </p>
+                        <p>
+                            <code>quantum_dimensions_rational_level5.json</code>
+                            contains the other 11 level-5 quantum dimensions.
+                            Each <code>rational_function</code> is the exact
+                            quotient in <i>Q</i>, <i>q</i>, stored as text
+                            because its
+                            expanded numerator has thousands of terms.
+                        </p>
+                        <p>
+                            Python can read the live compact file without any
+                            additional package:
+                        </p>
+                        <pre><code>import json
+from urllib.request import urlopen
+
+url = ("https://www.brucewestbury.uk/projects/exceptional/data/stored/"
+       "quantum_dimensions.json")
+with urlopen(url) as response:
+    records = json.load(response)["quantum_dimensions"]
+
+by_label = {record["label"]: record for record in records}
+print(by_label["V2010"])</code></pre>
+                        <p>
+                            Replacing
+                            <code>data/stored/quantum_dimensions.json</code> in
+                            the URL by
+                            <code>data/derived/quantum_dimensions_rational_level5.json</code>
+                            reads the non-pair file in the same way.
+                        </p>
+                    </section>
                     <nav class="page-nav">
                         <a class="prev" href="products.html">Product decompositions</a>
                         <a class="next" href="schur-functors.html">Schur functors</a>

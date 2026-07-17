@@ -153,7 +153,9 @@ def check_pages() -> None:
             local = value.split("?", 1)[0]
             assert (path.parent / local).resolve().exists(), (filename, value)
     qdim_page = (PROJECT / "quantum-dimensions.html").read_text(encoding="utf-8")
-    assert "rational_function" not in qdim_page
+    rational_qdims = load("derived/quantum_dimensions_rational_level5.json")
+    for record in rational_qdims["quantum_dimensions"]:
+        assert record["rational_function"] not in qdim_page
     renderer = (ROOT / "assets" / "js" / "exceptional-tables.js").read_text(
         encoding="utf-8"
     )
